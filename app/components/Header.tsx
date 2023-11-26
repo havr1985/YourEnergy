@@ -7,7 +7,7 @@ export default function Header() {
     
 
     return (
-    <header className="flex justify-between py-[28px] items-center">
+    <header className="flex justify-between py-[28px] items-center container mx-auto px-[32px]'">
             <Image rel="icon" src='/logo.svg' alt="logo" width={132} height={24}/>
             <Navigations/>
         <ul className="flex gap-[12px]">

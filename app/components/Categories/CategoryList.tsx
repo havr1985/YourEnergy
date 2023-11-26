@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { lazy } from "react";
 
 interface Data{
     page: number;
@@ -22,8 +23,8 @@ export default function CategoryList({ result }: { result: Data | undefined }) {
                 {categoies?.map(({ filter, name, imgURL }) => {
                     let newName: string = name.toUpperCase();
                     return (
-                        <li key={name} className=" max-w-[290px] max-h-[242px] relative ">
-                            <a href="" className=" w-[100%] h-full">
+                        <li key={name} className=" max-w-[290px]  relative ">
+                            <a href="" className=" w-[100%]">
                                 <div className=" absolute w-[100%] h-full bg-[#11111180] rounded-[12px]">
                                 </div>
                                 <Image src={imgURL} alt={name} width={290} height={242}
